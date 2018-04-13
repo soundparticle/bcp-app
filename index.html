@@ -17,13 +17,20 @@
 
     <script>
         function getSquare() {
+            //find the input with id "input-number":
             var input = document.getElementById('input-number')
+            //get the input, with name=power, that is checked
             var power = document.querySelector('input[name=power]:checked');
             
+            //get the value out of the radio button:
             var exponent = power.value
+             
+            //get the value out of the number input:
             var x = input.value;
 
+            //calculate the answer:
             var answer = Math.pow(x, exponent);
+            //log the answer to the console:
             console.log(x, 'to the', exponent, 'is', answer);
         }
         
