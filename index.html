@@ -8,16 +8,19 @@
 </head>
 <body>
     <h1>run some code</h1>
+    <input id="input-number" type="number">
     <button onclick="getSquare()">Get Square</button>
 
     <script>
         function getSquare() {
-            
-            var x = +prompt('a number?');
+            var input = document.getElementById('input-number')
+            //console.log(input.value);
+            //var x = +prompt('a number?');
+            var x = input.value;
             var square = x * x;
             console.log('square of', x, 'is', square);
         }
-        //getSquare();
+        
     </script>
     
 </body>
